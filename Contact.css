@@ -1,0 +1,100 @@
+/* ===================================
+   CONTACT PAGE - ALL CSS
+   =================================== */
+
+/* ส่วนพื้นฐาน */
+.contact-section {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #faf8f5;
+    font-family: 'Kanit', sans-serif;
+}
+
+.contact-section h1 {
+    font-size: 42px;
+    color: #45382c;
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+/* ตารางแสดงช่องทาง */
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* กล่องแต่ละช่องทาง */
+.contact-item {
+    background: #ffffff;
+    padding: 35px 20px;
+    border-radius: 24px;
+    text-decoration: none;
+    color: #45382c;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* การจัดการไอคอน */
+.contact-item i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contact-item h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+}
+
+/* ปุ่ม "จิ้มตรงนี้" */
+.click-hint {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: #5f4d3d;
+    padding: 6px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* สีประจำแบรนด์เมื่อเอาเมาส์วาง */
+.line-card:hover { border-color: #06c755; color: #06c755; }
+.line-card:hover .click-hint { background: #06c755; }
+
+.fb-card:hover { border-color: #1877f2; color: #1877f2; }
+.fb-card:hover .click-hint { background: #1877f2; }
+
+.shopee-card:hover { border-color: #ee4d2d; color: #ee4d2d; }
+.shopee-card:hover .click-hint { background: #ee4d2d; }
+
+/* มือถือ */
+@media(max-width: 991px) {
+    .contact-links {
+        grid-template-columns: 1fr;
+    }
+}
